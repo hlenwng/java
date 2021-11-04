@@ -19,7 +19,7 @@ import javax.swing.JFrame;
 public class Life implements MouseListener, ActionListener, Runnable{
 	
 	//Variable and objects
-	boolean[][] cells = new boolean[10][10];
+	boolean[][] cells = new boolean[30][30];
 	JFrame frame = new JFrame("Life simulation");
 	LifePanel panel = new LifePanel(cells);
 	Container south = new Container();
