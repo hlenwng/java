@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:background="#FFFFFF"
+    >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:inputType="text"
+
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="15dp"
+
+        android:background="#3B3F41"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:textColorHint="#797D7E"
+        />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="10dp" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textColor="#FFFFFF"
+        android:background="#BC9693"
+        android:gravity="center_horizontal"
+
+        android:text="What type of cipher?"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="30dp" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="20dp" />
+
+    <RadioGroup
+        android:id="@+id/rg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    <RadioButton
+        android:id="@+id/button1"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text=" Scytale Cipher"
+        android:textSize="30dp" />
+
+    <RadioButton
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text=" Caesar Cipher"
+        android:textSize="30dp" />
+
+    <RadioButton
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text=" Vigenere Cipher"
+        android:textSize="30dp" />
+
+
+    </RadioGroup>
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="30dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:background="#FFFFFF"
+        >
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+
+            android:layout_gravity="left"
+            android:layout_marginLeft="18dp"
+            android:backgroundTint="#dbbebb"
+
+            android:text="encrypt"
+            android:textColor="#FFFFFF"
+
+
+            android:textSize="40dp" />
+
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+
+            android:layout_gravity="right"
+
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/button4"
+
+            android:backgroundTint="#dbbebb"
+
+
+            android:text="decrypt"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp" />
+
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="#3A3F41"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+
+
+        android:textColor="#FFFFFF"
+        android:textColorHint="#797D7E"
+        android:textSize="30dp" />
+
+</LinearLayout>

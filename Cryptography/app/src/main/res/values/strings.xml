@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Cryptography</string>
+    <string name="numOfColumnsScytale">Enter number of columns here.</string>
+</resources>
