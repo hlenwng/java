@@ -1,0 +1,52 @@
+12 : 2 = 6 + 0
+ 6 : 2 = 3 + 0
+ 3 : 2 = 1 + 1
+ 1 : 2 = 0 + 1
+ 
+then write the remainder in reverse order to find the binary representation
+
+1100 = 12
+binary = decimal
+
+
+	if(input.equals("d-b")) { //decimal to binary
+				int num = 0;
+				Scanner decimalConvert = new Scanner(System.in);
+				
+				System.out.println("Please enter the decimal number...");
+				
+				String answer = decimalConvert.nextLine();
+			    num = Integer.parseInt(answer);
+
+				int binary[] = new int[40];
+			    int index = 0;
+			   
+			    while(num > 0){
+			    	binary[index++] = num%2;
+			    	num = num/2;
+		        }
+			    
+		        for(int i = index-1; i >= 0; i--){
+		        	System.out.print(binary[i]);
+		        }
+			    
+			}    
+		}
+			
+			else { //binary to decimal
+				int number, decimal = 0, a = 0;
+			    Scanner binaryConvert = new Scanner(System.in);
+						
+				System.out.println("Please enter the binary number...");
+			
+			    String strBinary = binaryConvert.nextLine();
+			    number = Integer.parseInt(strBinary);
+			   
+			    while(number != 0){
+			    	decimal += (number % 10) * Math.pow(2, a);
+			    	number = number / 10;
+			    	a++;				
+			    }
+			    
+		    	System.out.println("Decimal number: " + decimal);
+			}

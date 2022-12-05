@@ -1,0 +1,44 @@
+if (guess == randomNum) {
+				System.out.println("You got it right!");
+			} else if (guess <= 25 || randomNum <= 25) {
+				System.out.println("Guess is less than or equal to 25...");
+				//break;
+				if (guess <= 13 || randomNum <= 13) {
+					System.out.println("Guess is less than or equal to 13...");
+				} else {
+					System.out.println("Guess is greater than 14...");
+				}
+			} else if (guess > 26 || randomNum > 26) {
+				System.out.println("Guess is greater than 26");
+				if (guess <= 39 || randomNum <= 39) {
+					System.out.println("Guess is less than or equal to 39...");
+				} else {
+					System.out.println("Guess is greater than 39...");
+				}
+			}
+			
+			
+			
+			
+if the guess <= 25, random <= 25  (youre on the right track, the number is less than or equal to 25)
+if the guess <= 25, random > 25 (too low! the number is greater than 25)
+if the guess > 25, random > 25 (youre on the right track, the number is greater than 25)
+if the guess > 25, random <= 25 (too high! the number is less than or equal to 25)
+
+
+PREVIOUS WHILE LOOP
+
+while (guess != randomNum) {
+			String input = scanner.nextLine();
+			System.out.println("You typed: " + input);
+			guess = Integer.parseInt(input);
+			System.out.println(guess);
+			
+			if (guess == randomNum) {
+				System.out.println("You got it right!");
+			} else if (guess <= 25 || randomNum <= 25) {
+				System.out.println("Guess is less than or equal to 25...");
+			} else if (guess > 26 || randomNum > 26) {
+				System.out.println("Guess is greater than 26");
+			}
+		}
